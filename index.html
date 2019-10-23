@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Now What API Capstone Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/975260fbec.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans+Condensed:300|Raleway|Ubuntu&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="website-info">
+    <h1>"Now What?"</h1>
+    <div class="top-line"></div>
+  
+    <div class="icons">
+      <i class="fas fa-music"></i>
+      <i class="fas fa-film"></i>
+      <i class="fas fa-tv"></i>
+      <i class="fas fa-book"></i>
+      <i class="fas fa-pencil-alt"></i>
+      <i class="fas fa-gamepad"></i>
+      <i class="fas fa-podcast"></i>
+    </div>
+    <div class="info">
+      <p>We all know that feeling—you've just finished an entire series, game, playlist, etc. NOW WHAT? By searching the name of your favorite movie, music, author, etc. you'll discover similar content you'll love!</p>
+    </div>
+    </section>
+
+    <section class="form">
+    <form id="js-form">
+      <select id="content-type" onchange="contentType()">
+        <option>Music</option>
+        <option>Movie</option>
+        <option>TV Show</option>
+        <option>Book</option>
+        <option>Author</option>
+        <option>Game</option>
+        <option>Podcast</option>
+      </select>
+
+      <input type="text" placeholder="Ex: Pink Floyd" name="search-term" id="js-search-term" required>
+
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    
+    <p id="js-error-message" class="error-message"></p>
+    <section id="results" class="hidden">
+      <h2 class="insert-name">We recommend :<h2>
+      <ul id="results-list">
+      </ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
