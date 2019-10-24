@@ -1,7 +1,7 @@
 "Now What?"
 
 Live Page: 
-https://github.com/Lindajaay0/now-what-project.git
+https://lindajaay0.github.io/now-what-project/
 
 Description This website allows users to search the name of a movie, 
 show, game, music, book, author, or podcast and returns a list of similar 
